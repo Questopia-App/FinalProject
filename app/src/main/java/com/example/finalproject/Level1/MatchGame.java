@@ -13,7 +13,6 @@ import android.widget.Toast;
 
 import com.example.finalproject.MainActivity;
 import com.example.finalproject.R;
-import com.example.finalproject.login.LoginPage;
 
 
 public class MatchGame extends AppCompatActivity {
@@ -29,6 +28,7 @@ public class MatchGame extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getSupportActionBar().hide();
         setContentView(R.layout.activity_match_game);
 
 

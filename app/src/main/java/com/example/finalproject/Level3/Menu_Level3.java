@@ -4,47 +4,87 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.Toast;
 
-import com.example.finalproject.Level1.Level1_EvsGames_Menu;
-import com.example.finalproject.Level1.Level1_LiteracyGames_Menu;
-import com.example.finalproject.Level1.Level1_NumeracyGames_Menu;
-import com.example.finalproject.Level1.Menu_Level1;
+import com.example.finalproject.Level2.Animal_Quiz;
+import com.example.finalproject.Level2.Menu_Level2;
 import com.example.finalproject.R;
 
 public class Menu_Level3 extends AppCompatActivity {
 
-    Button gotoNumeracy,gotoLiteracy,gotoEvs;
+    ImageView game1,game2,game3,game4,game5,game6;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getSupportActionBar().hide();
         setContentView(R.layout.activity_menu_level3);
 
-        gotoLiteracy = findViewById(R.id.literacy);
-        gotoNumeracy = findViewById(R.id.numeracy);
-        gotoEvs = findViewById(R.id.evs);
 
-        gotoLiteracy.setOnClickListener(view -> {
-//            Intent intent = new Intent(Menu_Level1.this, Level1_LiteracyGames_Menu.class);
-//            startActivity(intent);
-//            //onBackPressed();
-            Toast.makeText(this, "Coming Soon", Toast.LENGTH_SHORT).show();
-        });
 
-        gotoNumeracy.setOnClickListener(view -> {
-//            Intent intent = new Intent(Menu_Level1.this, Level1_NumeracyGames_Menu.class);
-//            startActivity(intent);
-//            //onBackPressed();
-            Toast.makeText(this, "Coming Soon", Toast.LENGTH_SHORT).show();
-        });
+        game1=findViewById(R.id.game1);
+        game2=findViewById(R.id.game2);
+        game3=findViewById(R.id.game3);
+        game4=findViewById(R.id.game4);
+        game5=findViewById(R.id.game5);
+        game6=findViewById(R.id.game6);
 
-        gotoEvs.setOnClickListener(view -> {
-//            Intent intent = new Intent(Menu_Level1.this, Level1_EvsGames_Menu.class);
-//            startActivity(intent);
-//            onBackPressed();
-            Toast.makeText(this, "Coming Soon", Toast.LENGTH_SHORT).show();
-        });
+
+        // Literacy Games
+
+//        game1.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent = new Intent(Menu_Level1.this,);
+//                startActivity(intent);
+//            }
+//        });
+//
+//        game2.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent = new Intent(Menu_Level1.this,);
+//                startActivity(intent);
+//            }
+//        });
+
+        // Numeracy Games
+
+//        game3.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent = new Intent(Menu_Level1.this, DragShape.class);
+//                startActivity(intent);
+//            }
+//        });
+//
+//        game4.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent = new Intent(Menu_Level1.this,);
+//                startActivity(intent);
+//            }
+//        });
+
+        // EVS Games
+
+//        game5.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent = new Intent(Menu_Level2.this, Animal_Quiz.class);
+//                startActivity(intent);
+//            }
+//        });
+
+//        game6.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent = new Intent(Menu_Level1.this,);
+//                startActivity(intent);
+//            }
+//        });
     }
 }

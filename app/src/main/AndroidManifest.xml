@@ -10,7 +10,7 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/Theme.FinalProject"
+        android:theme="@style/AppTheme"
         tools:targetApi="31">
         <activity
             android:name=".Level2.Musical_Instrument"
@@ -26,15 +26,6 @@
             android:exported="false" />
         <activity
             android:name=".Level2.Level2_EvsGames_Menu"
-            android:exported="false" />
-        <activity
-            android:name=".Level1.Level1_EvsGames_Menu"
-            android:exported="false" />
-        <activity
-            android:name=".Level1.Level1_LiteracyGames_Menu"
-            android:exported="false" />
-        <activity
-            android:name=".Level1.Level1_NumeracyGames_Menu"
             android:exported="false" />
         <activity
             android:name=".Level1.Animation_done"
@@ -63,12 +54,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".login.LoginPage"
-            android:exported="false" />
-        <activity
-            android:name=".Menu.MenuActivity"
-            android:exported="false" />
+
     </application>
 
 </manifest>

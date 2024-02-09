@@ -27,6 +27,7 @@ public class DragShape extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getSupportActionBar().hide();
         setContentView(R.layout.activity_drag_shape);
 //
 //        LottieAnimationView animationView1 = findViewById(R.id.anim_congrats1);
