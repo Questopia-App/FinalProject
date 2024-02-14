@@ -12,6 +12,7 @@ import com.airbnb.lottie.LottieAnimationView;
 import com.example.finalproject.Level1.Menu_Level1;
 import com.example.finalproject.Level2.Menu_Level2;
 import com.example.finalproject.Level3.Menu_Level3;
+import com.example.finalproject.MusicPlace.MenuMusicPlace;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -19,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
     private ImageView level1;
     private ImageView level2;
     private ImageView level3;
+    private ImageView music;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
         level1 = findViewById(R.id.level1);
         level2 = findViewById(R.id.level2);
         level3 = findViewById(R.id.level3);
+        music = findViewById(R.id.music);
 
         level1.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -48,6 +51,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view){
                 Intent intent = new Intent(MainActivity.this,Menu_Level3.class);
+                startActivity(intent);
+            }
+        });
+
+        music.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, MenuMusicPlace.class);
                 startActivity(intent);
             }
         });

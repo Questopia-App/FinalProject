@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.finalproject">
+    xmlns:tools="http://schemas.android.com/tools">
 
     <application
         android:allowBackup="true"
@@ -13,19 +12,24 @@
         android:theme="@style/AppTheme"
         tools:targetApi="31">
         <activity
+            android:name=".MusicPlace.QuizTime"
+            android:exported="false" />
+        <activity
+            android:name=".MusicPlace.PlayMusic"
+            android:exported="false"
+            android:label="@string/title_activity_play_music"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".MusicPlace.LearnInstruments"
+            android:exported="false" />
+        <activity
+            android:name=".MusicPlace.MenuMusicPlace"
+            android:exported="false" />
+        <activity
             android:name=".Level2.Musical_Instrument"
             android:exported="false" />
         <activity
             android:name=".Level1.DragShape"
-            android:exported="false" />
-        <activity
-            android:name=".Level2.Level2_NumeracyGames_Menu"
-            android:exported="false" />
-        <activity
-            android:name=".Level2.Level2_LiteracyGames_Menu"
-            android:exported="false" />
-        <activity
-            android:name=".Level2.Level2_EvsGames_Menu"
             android:exported="false" />
         <activity
             android:name=".Level1.Animation_done"
@@ -54,7 +58,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
     </application>
 
 </manifest>

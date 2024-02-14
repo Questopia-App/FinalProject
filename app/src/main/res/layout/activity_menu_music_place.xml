@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg6"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Heading -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CHOOSE FROM BELOW"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="25dp"/>
+
+        <!-- Linear Layout with two ImageViews -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+            <!-- Left ImageView -->
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/testmusic"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:layout_marginEnd="8dp"/>
+
+            <TextView
+                android:id="@+id/learnInstruments"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg7"
+                android:layout_weight="4"
+                android:text="LEARN INSTRUMENTS"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="23sp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+            <!-- Left ImageView -->
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/playmusic"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:layout_marginEnd="8dp"/>
+
+            <TextView
+                android:id="@+id/playMusic"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:background="@drawable/bg7"
+                android:text="PLAY MUSIC"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="23sp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+            <!-- Left ImageView -->
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/questionmusic"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:layout_marginEnd="8dp"/>
+
+            <TextView
+                android:id="@+id/identifyInstruments"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:background="@drawable/bg7"
+                android:text="QUIZ TIME"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="23sp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
