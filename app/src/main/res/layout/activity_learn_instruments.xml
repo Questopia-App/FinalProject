@@ -2,41 +2,21 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg8"
-    >
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg8">
 
     <!-- Heading -->
     <TextView
         android:id="@+id/headingTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Your Heading"
+        android:text="TAP TO PLAY SOUND"
         android:textSize="24sp"
         android:gravity="center"
+        android:textColor="@color/deep_blue"
+        android:textStyle="bold"
         android:padding="16dp"/>
 
-    <!-- Horizontal Linear Layout with ImageViews -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:padding="16dp"
-
-        android:layout_below="@id/headingTextView">
-
-        <ImageView
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:src="@drawable/flute_image"/>
-
-        <ImageView
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:src="@drawable/piano_image"/>
-
-    </LinearLayout>
 
     <!-- ScrollView below the heading -->
     <ScrollView
@@ -45,16 +25,307 @@
         android:layout_below="@id/headingTextView"
         android:layout_marginTop="8dp">
 
-        <!-- Your content goes here -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:padding="16dp"
+            >
 
-            <!-- Your scrollable content -->
+            <!-- PIANO -->
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp">
+
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/musicwaveAnim_piano"
+                    android:layout_width="match_parent"
+                    android:layout_height="190dp"
+                    android:visibility="gone"
+                    app:lottie_rawRes="@raw/musicwave_anim"
+                    android:layout_gravity="center"
+                    android:foregroundGravity="center"
+                    app:lottie_loop="true"
+                    app:lottie_autoPlay="false" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:elevation="15dp"
+                    app:cardCornerRadius="15dp"
+                    app:cardBackgroundColor="#80FFFFFF"
+                    app:cardElevation="15dp">
+
+                    <ImageView
+                        android:id="@+id/pianoImg"
+                        android:layout_width="300dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/piano_image"
+                        android:scaleType="centerCrop" />
+
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+
+            <!-- FLUTE -->
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp">
+
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/musicwaveAnim_flute"
+                    android:layout_width="match_parent"
+                    android:layout_height="190dp"
+                    android:visibility="gone"
+                    app:lottie_rawRes="@raw/musicwave_anim"
+                    android:layout_gravity="center"
+                    android:foregroundGravity="center"
+                    app:lottie_loop="true"
+                    app:lottie_autoPlay="false" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:elevation="15dp"
+                    app:cardCornerRadius="15dp"
+                    app:cardBackgroundColor="#80FFFFFF"
+                    app:cardElevation="15dp">
+
+                    <ImageView
+                        android:id="@+id/fluteImg"
+                        android:layout_width="300dp"
+                        android:layout_height="120dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/flute_image"
+                        android:scaleType="centerCrop" />
+
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+
+            <!-- GUITAR -->
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp">
+
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/musicwaveAnim_guitar"
+                    android:layout_width="match_parent"
+                    android:layout_height="190dp"
+                    android:visibility="gone"
+                    app:lottie_rawRes="@raw/musicwave_anim"
+                    android:layout_gravity="center"
+                    android:foregroundGravity="center"
+                    app:lottie_loop="true"
+                    app:lottie_autoPlay="false" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:elevation="15dp"
+                    app:cardCornerRadius="15dp"
+                    app:cardBackgroundColor="#80FFFFFF"
+                    app:cardElevation="15dp">
+
+                    <ImageView
+                        android:id="@+id/guitarImg"
+                        android:layout_width="300dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/guitar_image"
+                        />
+
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+
+            <!-- HARP -->
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp">
+
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/musicwaveAnim_harp"
+                    android:layout_width="match_parent"
+                    android:layout_height="190dp"
+                    android:visibility="gone"
+                    app:lottie_rawRes="@raw/musicwave_anim"
+                    android:layout_gravity="center"
+                    android:foregroundGravity="center"
+                    app:lottie_loop="true"
+                    app:lottie_autoPlay="false" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:elevation="15dp"
+                    app:cardCornerRadius="15dp"
+                    app:cardBackgroundColor="#80FFFFFF"
+                    app:cardElevation="15dp">
+
+                    <ImageView
+                        android:id="@+id/harpImg"
+                        android:layout_width="300dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/harp_image"
+                         />
+
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+
+            <!-- DRUMS -->
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp">
+
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/musicwaveAnim_drums"
+                    android:layout_width="match_parent"
+                    android:layout_height="190dp"
+                    android:visibility="gone"
+                    app:lottie_rawRes="@raw/musicwave_anim"
+                    android:layout_gravity="center"
+                    android:foregroundGravity="center"
+                    app:lottie_loop="true"
+                    app:lottie_autoPlay="false" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:elevation="15dp"
+                    app:cardCornerRadius="15dp"
+                    app:cardBackgroundColor="#80FFFFFF"
+                    app:cardElevation="15dp">
+
+                    <ImageView
+                        android:id="@+id/drumsImg"
+                        android:layout_width="300dp"
+                        android:layout_height="125dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/drums_image"
+                         />
+
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+
+            <!-- VIOLIN -->
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp">
+
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/musicwaveAnim_violin"
+                    android:layout_width="match_parent"
+                    android:layout_height="190dp"
+                    android:visibility="gone"
+                    app:lottie_rawRes="@raw/musicwave_anim"
+                    android:layout_gravity="center"
+                    android:foregroundGravity="center"
+                    app:lottie_loop="true"
+                    app:lottie_autoPlay="false" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:elevation="15dp"
+                    app:cardCornerRadius="15dp"
+                    app:cardBackgroundColor="#80FFFFFF"
+                    app:cardElevation="15dp">
+
+                    <ImageView
+                        android:id="@+id/violinImg"
+                        android:layout_width="300dp"
+                        android:layout_height="200dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/violin_image"
+                         />
+
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+
+            <!-- XYLOPHONE -->
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp">
+
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/musicwaveAnim_xylophone"
+                    android:layout_width="match_parent"
+                    android:layout_height="190dp"
+                    android:visibility="gone"
+                    app:lottie_rawRes="@raw/musicwave_anim"
+                    android:layout_gravity="center"
+                    android:foregroundGravity="center"
+                    app:lottie_loop="true"
+                    app:lottie_autoPlay="false" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:elevation="15dp"
+                    app:cardCornerRadius="15dp"
+                    app:cardBackgroundColor="#80FFFFFF"
+                    app:cardElevation="15dp">
+
+                    <ImageView
+                        android:id="@+id/xylophoneImg"
+                        android:layout_width="300dp"
+                        android:layout_height="180dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/xylophone_image"
+                         />
+
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+
 
         </LinearLayout>
 
     </ScrollView>
 
 </RelativeLayout>
+
+    <!--                <com.airbnb.lottie.LottieAnimationView-->
+    <!--                    android:id="@+id/anim2"-->
+    <!--                    android:layout_width="300dp"-->
+    <!--                    android:layout_height="300dp"-->
+    <!--                    app:lottie_autoPlay="true"-->
+    <!--                    app:lottie_loop="true"-->
+    <!--                    android:visibility="visible"-->
+    <!--                    android:layout_gravity="center_horizontal"-->
+    <!--                    app:lottie_rawRes="@raw/select_anim"/>-->

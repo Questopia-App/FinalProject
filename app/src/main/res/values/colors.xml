@@ -7,4 +7,54 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+<!--  Some common colors  -->
+    <color name="violet">#7F00FF</color>
+    <color name="light_violet">#B279FF</color>
+    <color name="deep_violet">#2E0854</color>
+
+    <color name="indigo">#4B0082</color>
+    <color name="light_indigo">#6A5ACD</color>
+    <color name="deep_indigo">#191970</color>
+
+    <color name="blue">#0000FF</color>
+    <color name="light_blue">#87CEEB</color>
+    <color name="deep_blue">#0000CD</color>
+
+    <color name="green">#00FF00</color>
+    <color name="light_green">#90EE90</color>
+    <color name="deep_green">#008000</color>
+
+    <color name="yellow">#FFFF00</color>
+    <color name="light_yellow">#FFFFE0</color>
+    <color name="deep_yellow">#FFFF00</color>
+
+    <color name="orange">#FFA500</color>
+    <color name="light_orange">#FFD700</color>
+    <color name="deep_orange">#FF4500</color>
+
+    <color name="red">#FF0000</color>
+    <color name="light_red">#FF7F7F</color>
+    <color name="deep_red">#8B0000</color>
+
 </resources>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
