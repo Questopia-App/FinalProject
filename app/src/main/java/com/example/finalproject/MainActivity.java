@@ -16,7 +16,6 @@ import com.example.finalproject.MusicPlace.MenuMusicPlace;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button buttonMain;
     private ImageView level1;
     private ImageView level2;
     private ImageView level3;
