@@ -29,14 +29,6 @@ public class DragShape extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         getSupportActionBar().hide();
         setContentView(R.layout.activity_drag_shape);
-//
-//        LottieAnimationView animationView1 = findViewById(R.id.anim_congrats1);
-//        LottieAnimationView animationView2 = findViewById(R.id.anim_correct);
-//        LottieAnimationView animationView3 = findViewById(R.id.anim_congrats2);
-//        animationView1.setAnimation(R.raw.congrats_anim2);
-//        animationView2.setAnimation(R.raw.correct_anim);
-//        animationView3.setAnimation(R.raw.congrats_anim2);
-
 
 
 

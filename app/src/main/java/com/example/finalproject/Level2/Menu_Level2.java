@@ -5,12 +5,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageView;
 
-import com.example.finalproject.Level1.DragShape;
-import com.example.finalproject.Level1.MatchGame;
-import com.example.finalproject.Level1.Menu_Level1;
 import com.example.finalproject.R;
 
 public class Menu_Level2 extends AppCompatActivity {
@@ -51,13 +47,13 @@ public class Menu_Level2 extends AppCompatActivity {
 
         // Numeracy Games
 
-//        game3.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent intent = new Intent(Menu_Level1.this, DragShape.class);
-//                startActivity(intent);
-//            }
-//        });
+        game3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Menu_Level2.this, CountingGame.class);
+                startActivity(intent);
+            }
+        });
 //
 //        game4.setOnClickListener(new View.OnClickListener() {
 //            @Override
