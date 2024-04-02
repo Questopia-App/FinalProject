@@ -23,7 +23,7 @@ public class MenuMusicPlace extends AppCompatActivity {
         setContentView(R.layout.activity_menu_music_place);
 
         learnInstruments = findViewById(R.id.learnInstruments);
-        playMusic = findViewById(R.id.playMusic);
+//        playMusic = findViewById(R.id.playMusic);
         quizTime = findViewById(R.id.identifyInstruments);
 
         learnInstruments.setOnClickListener(new View.OnClickListener() {
@@ -34,14 +34,14 @@ public class MenuMusicPlace extends AppCompatActivity {
 
             }
         });
-        playMusic.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MenuMusicPlace.this, PlayMusic.class);
-                startActivity(intent);
-
-            }
-        });
+//        playMusic.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent(MenuMusicPlace.this, PlayMusic.class);
+//                startActivity(intent);
+//
+//            }
+//        });
         quizTime.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

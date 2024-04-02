@@ -1,9 +1,119 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MusicPlace.QuizTime">
+    android:background="#009DC4"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose Category"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:padding="5dp"
+        android:gravity="center"
+        />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_category"
+    android:layout_marginTop="50dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginLeft="15dp"
+    >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:elevation="35dp"
+        android:backgroundTint="#AABBE6"
+        app:cardCornerRadius="5dp">
+
+        <!-- Image inside CardView -->
+        <ImageView
+            android:id="@+id/category1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/rhymes"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:padding="10dp"
+            android:focusable="true" />
+
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:text="Guess the Rhymes"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:elevation="35dp"
+        android:backgroundTint="#AABBE6"
+        app:cardCornerRadius="5dp">
+
+        <!-- Image inside CardView -->
+        <ImageView
+            android:id="@+id/category2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/guess_instrument"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:padding="10dp"
+            android:focusable="true" />
+
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:text="Guess the Instrument"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+
+
+
+
+</LinearLayout>
+
+
+
+
+
+</LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>

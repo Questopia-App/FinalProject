@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -68,13 +69,13 @@ public class CountingGame extends AppCompatActivity {
             int userAnswer = Integer.parseInt(userAnswerString);
 
             if (userAnswer == correctAnswer) {
-                resultTextView.setText("Correct!");
+                //Toast.makeText(getApplicationContext(), "Correct answer", Toast.LENGTH_SHORT).show();
                 score += 10;
                 scoreTextView.setText("Score: " + score);
                 level++;
                 levelTextView.setText("Level " + level);
             } else {
-                resultTextView.setText("Incorrect. Try again!");
+                //Toast.makeText(getApplicationContext(), "Incorrect answer", Toast.LENGTH_SHORT).show();
             }
 
             setQuestion();
