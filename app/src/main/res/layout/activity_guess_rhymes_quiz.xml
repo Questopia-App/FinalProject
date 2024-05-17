@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg9"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/scoreText"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:text="Score: 0"
+        android:layout_gravity="center_vertical"
+        android:gravity="end"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/questionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IDENTIFY THE RHYME"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="32dp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        >
+
+
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/wave"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:lottie_rawRes="@raw/musicwave2"
+            android:layout_gravity="center"
+            android:foregroundGravity="center"
+            app:lottie_loop="true"
+            app:lottie_autoPlay="false" />
+
+
+
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:orientation="horizontal">
+
+
+    <Button
+        android:id="@+id/option1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Option 1"
+        android:layout_margin="10dp"
+        android:backgroundTint="@color/light_blue"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+    />
+
+
+    <Button
+        android:id="@+id/option2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Option 2"
+        android:layout_margin="10dp"
+        android:backgroundTint="@color/light_blue"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        />
+
+</LinearLayout>
+
+
+
+
+
+
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Proceed"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:layout_margin="10dp"
+        android:backgroundTint="@color/light_red"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:visibility="gone"/>
+
+</LinearLayout>
+
