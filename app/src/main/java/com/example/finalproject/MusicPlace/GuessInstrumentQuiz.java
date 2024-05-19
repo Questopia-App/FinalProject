@@ -19,7 +19,7 @@ import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class GuessRhymesQuiz extends AppCompatActivity {
+public class GuessInstrumentQuiz extends AppCompatActivity {
 
     private TextView questionText, scoreText;
     private Button option1, option2, nextButton;
@@ -30,14 +30,15 @@ public class GuessRhymesQuiz extends AppCompatActivity {
 
     private MediaPlayer questionPlayer, correctSound, wrongSound;
 
-    String heading = "IDENTIFY THE RHYME";
+    String heading = "IDENTIFY THE INSTRUMENT";
 
-    private String[][] options = {{"Baa Baa Black Sheep", "Hickory Dickory Dock"},
-            {"Little Miss Muffet", "Humpty Dumpty"},
-            {"Mary Had a Little Lamb", "Old MacDonald Had a Farm"},
-            {"Jack and Jill", "Twinkle Twinkle Little Star"}};
-    private int[] correctAnswers = {0, 1, 0, 1}; // Index of correct answer for each question
-    private int[] audioFiles = {R.raw.music_blacksheep, R.raw.music_humpty, R.raw.music_marylamb, R.raw.music_twinkle};
+    private String[][] options = {{"DRUMS", "TAMBOURINE"},
+            {"MANDOLIN", "HARP"},
+            {"PIANO", "ACCORDION"},
+            {"CLARINET", "FLUTE"},
+            {"UKULELE","GUITAR"}};
+    private int[] correctAnswers = {0, 1, 0, 1, 1}; // Index of correct answer for each question
+    private int[] audioFiles = {R.raw.music_drums, R.raw.music_harp, R.raw.music_piano, R.raw.music_flute,R.raw.music_guitar};
 
     private ArrayList<Integer> questionOrder;
 
@@ -45,7 +46,7 @@ public class GuessRhymesQuiz extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getSupportActionBar().hide();
-        setContentView(R.layout.activity_guess_rhymes_quiz);
+        setContentView(R.layout.activity_guess_instrument_quiz);
 
         questionText = findViewById(R.id.questionText);
         scoreText = findViewById(R.id.scoreText);

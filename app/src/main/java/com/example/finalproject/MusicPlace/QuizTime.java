@@ -41,13 +41,13 @@ public class QuizTime extends AppCompatActivity {
             }
         });
 
-//        category2.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent = new Intent(QuizTime.this,Quiz2.class);
-//                startActivity(intent);
-//            }
-//        });
+        category2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(QuizTime.this,GuessInstrumentQuiz.class);
+                startActivity(intent);
+            }
+        });
 
     }
 }
