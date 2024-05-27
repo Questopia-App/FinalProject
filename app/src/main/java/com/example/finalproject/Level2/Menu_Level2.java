@@ -19,12 +19,11 @@ public class Menu_Level2 extends AppCompatActivity {
         setContentView(R.layout.activity_menu_level2);
 
 
-        game1=findViewById(R.id.game1);
-        game2=findViewById(R.id.game2);
+
         game3=findViewById(R.id.game3);
-        game4=findViewById(R.id.game4);
+
         game5=findViewById(R.id.game5);
-        game6=findViewById(R.id.game6);
+
 
 
         // Literacy Games

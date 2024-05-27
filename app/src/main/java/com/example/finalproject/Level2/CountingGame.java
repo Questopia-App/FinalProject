@@ -1,5 +1,6 @@
 package com.example.finalproject.Level2;
 
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.view.View;
@@ -26,6 +27,8 @@ public class CountingGame extends AppCompatActivity {
     private TextView levelTextView;
     private CountDownTimer timer;
 
+    private MediaPlayer correctSound, wrongSound;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,6 +40,9 @@ public class CountingGame extends AppCompatActivity {
         resultTextView = findViewById(R.id.resultTextView);
         scoreTextView = findViewById(R.id.scoreTextView);
         levelTextView = findViewById(R.id.levelTextView);
+
+        correctSound = MediaPlayer.create(this, R.raw.correct_answer);
+        wrongSound = MediaPlayer.create(this, R.raw.wrong_answer);
 //        timer = findViewById(R.id.timer);
 
         // Set initial question
@@ -71,11 +77,13 @@ public class CountingGame extends AppCompatActivity {
             if (userAnswer == correctAnswer) {
                 //Toast.makeText(getApplicationContext(), "Correct answer", Toast.LENGTH_SHORT).show();
                 score += 10;
+                correctSound.start();
                 scoreTextView.setText("Score: " + score);
                 level++;
                 levelTextView.setText("Level " + level);
             } else {
                 //Toast.makeText(getApplicationContext(), "Incorrect answer", Toast.LENGTH_SHORT).show();
+                wrongSound.start();
             }
 
             setQuestion();

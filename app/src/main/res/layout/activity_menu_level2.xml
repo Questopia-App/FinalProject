@@ -11,87 +11,35 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
+        android:layout_gravity="center_vertical"
         android:padding="16dp">
 
         <!-- Heading -->
-        <TextView
-            android:id="@+id/literacy"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="LITERACY GAMES"
-            android:textStyle="bold"
-            android:textSize="24sp"
-            android:textColor="@color/black"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="16dp"/>
-
-        <!-- First Row of CardViews -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_gravity="center"
-            android:layout_marginBottom="16dp"
-            android:gravity="center"
-            tools:ignore="ExtraText">
-
-            <!-- First CardView -->
-<!--            <androidx.cardview.widget.CardView-->
-<!--                android:layout_width="0dp"-->
-<!--                android:layout_height="150dp"-->
-<!--                android:layout_weight="1"-->
-<!--                android:layout_gravity="center"-->
-<!--                android:layout_margin="10dp"-->
-<!--                android:elevation="15dp"-->
-<!--                app:cardCornerRadius="15dp"-->
-<!--                app:cardBackgroundColor="#80FFFFFF"-->
-<!--                app:cardElevation="5dp">-->
-
-<!--                <ImageView-->
-<!--                    android:id="@+id/game1"-->
-<!--                    android:layout_width="150dp"-->
-<!--                    android:layout_height="120dp"-->
-<!--                    android:layout_gravity="center"-->
-<!--                    android:src="@drawable/fruit_a"-->
-<!--                    android:clickable="false"-->
-<!--                    android:focusable="false"/>-->
-<!--            </androidx.cardview.widget.CardView>-->
-
-            <!-- Second CardView -->
-            <androidx.cardview.widget.CardView
-                android:layout_width="200dp"
-                android:layout_height="150dp"
-                android:layout_gravity="center"
-                android:layout_margin="10dp"
-                android:elevation="15dp"
-                app:cardCornerRadius="15dp"
-                app:cardBackgroundColor="#80FFFFFF"
-                app:cardElevation="5dp">
-
-                <ImageView
-                    android:id="@+id/game2"
-                    android:layout_width="150dp"
-                    android:layout_height="120dp"
-                    android:layout_gravity="center"
-                    android:src="@drawable/game1_image"
-                    android:clickable="false"
-                    android:focusable="false"/>
-            </androidx.cardview.widget.CardView>
-
-        </LinearLayout>
+<!--        <TextView-->
+<!--            android:id="@+id/literacy"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="LITERACY GAMES"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textSize="24sp"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:layout_gravity="center_horizontal"-->
+<!--            android:layout_marginBottom="16dp"/>-->
 
 
 
-        <TextView
-            android:id="@+id/numeracy"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="NUMERACY GAMES"
-            android:textStyle="bold"
-            android:textSize="24sp"
-            android:textColor="@color/black"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="16dp"/>
+
+
+<!--        <TextView-->
+<!--            android:id="@+id/numeracy"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="NUMERACY GAMES"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textSize="24sp"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:layout_gravity="center_horizontal"-->
+<!--            android:layout_marginBottom="16dp"/>-->
 
 
 
@@ -119,7 +67,7 @@
                     android:layout_width="150dp"
                     android:layout_height="120dp"
                     android:layout_gravity="center"
-                    android:src="@drawable/game2_image"
+                    android:src="@drawable/game1_image"
                     android:clickable="false"
                     android:focusable="false"/>
             </androidx.cardview.widget.CardView>
@@ -151,16 +99,16 @@
 
 
 
-        <TextView
-            android:id="@+id/evs"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="EVS GAMES"
-            android:textStyle="bold"
-            android:textSize="24sp"
-            android:textColor="@color/black"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="16dp"/>
+<!--        <TextView-->
+<!--            android:id="@+id/evs"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="EVS GAMES"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textSize="24sp"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:layout_gravity="center_horizontal"-->
+<!--            android:layout_marginBottom="16dp"/>-->
 
 
 
@@ -188,7 +136,7 @@
                     android:layout_width="150dp"
                     android:layout_height="120dp"
                     android:layout_gravity="center"
-                    android:src="@drawable/game3_image"
+                    android:src="@drawable/game2_image"
                     android:clickable="false"
                     android:focusable="false"/>
             </androidx.cardview.widget.CardView>

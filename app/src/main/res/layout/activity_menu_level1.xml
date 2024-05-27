@@ -11,56 +11,35 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
+        android:layout_gravity="center_vertical"
         android:padding="16dp">
 
     <!-- Heading -->
-    <TextView
-        android:id="@+id/literacy"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="LITERACY GAMES"
-        android:textStyle="bold"
-        android:textSize="24sp"
-        android:textColor="@color/black"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginBottom="16dp"/>
+<!--    <TextView-->
+<!--        android:id="@+id/literacy"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="LITERACY GAMES"-->
+<!--        android:textStyle="bold"-->
+<!--        android:textSize="24sp"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:layout_gravity="center_horizontal"-->
+<!--        android:layout_marginBottom="16dp"/>-->
 
     <!-- First Row of CardViews -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_gravity="center"
-        android:layout_marginBottom="16dp"
-        android:gravity="center"
-        tools:ignore="ExtraText">
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:layout_marginBottom="16dp"-->
+<!--        android:gravity="center"-->
+<!--        tools:ignore="ExtraText">-->
 
-        <!-- First CardView -->
-        <androidx.cardview.widget.CardView
-            android:layout_width="200dp"
-            android:layout_height="150dp"
-            android:layout_gravity="center"
-            android:layout_margin="10dp"
-            android:elevation="15dp"
-            app:cardCornerRadius="15dp"
-            app:cardBackgroundColor="#80FFFFFF"
-            app:cardElevation="5dp">
-
-            <ImageView
-                android:id="@+id/game1"
-                android:layout_width="150dp"
-                android:layout_height="120dp"
-                android:layout_gravity="center"
-                android:src="@drawable/game1_image"
-                android:clickable="false"
-                android:focusable="false"/>
-        </androidx.cardview.widget.CardView>
-
-        <!-- Second CardView -->
+<!--        &lt;!&ndash; First CardView &ndash;&gt;-->
 <!--        <androidx.cardview.widget.CardView-->
-<!--            android:layout_width="0dp"-->
+<!--            android:layout_width="200dp"-->
 <!--            android:layout_height="150dp"-->
-<!--            android:layout_weight="1"-->
 <!--            android:layout_gravity="center"-->
 <!--            android:layout_margin="10dp"-->
 <!--            android:elevation="15dp"-->
@@ -69,29 +48,51 @@
 <!--            app:cardElevation="5dp">-->
 
 <!--            <ImageView-->
-<!--                android:id="@+id/game2"-->
+<!--                android:id="@+id/game1"-->
 <!--                android:layout_width="150dp"-->
 <!--                android:layout_height="120dp"-->
 <!--                android:layout_gravity="center"-->
-<!--                android:src="@drawable/fruit_a"-->
+<!--                android:src="@drawable/game1_image"-->
 <!--                android:clickable="false"-->
 <!--                android:focusable="false"/>-->
 <!--        </androidx.cardview.widget.CardView>-->
 
-    </LinearLayout>
+<!--        &lt;!&ndash; Second CardView &ndash;&gt;-->
+<!--&lt;!&ndash;        <androidx.cardview.widget.CardView&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_width="0dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_height="150dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_weight="1"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_gravity="center"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_margin="10dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:elevation="15dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            app:cardCornerRadius="15dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            app:cardBackgroundColor="#80FFFFFF"&ndash;&gt;-->
+<!--&lt;!&ndash;            app:cardElevation="5dp">&ndash;&gt;-->
+
+<!--&lt;!&ndash;            <ImageView&ndash;&gt;-->
+<!--&lt;!&ndash;                android:id="@+id/game2"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_width="150dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_height="120dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_gravity="center"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:src="@drawable/fruit_a"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:clickable="false"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:focusable="false"/>&ndash;&gt;-->
+<!--&lt;!&ndash;        </androidx.cardview.widget.CardView>&ndash;&gt;-->
+
+<!--    </LinearLayout>-->
 
 
 
-        <TextView
-            android:id="@+id/numeracy"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="NUMERACY GAMES"
-            android:textStyle="bold"
-            android:textSize="24sp"
-            android:textColor="@color/black"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="16dp"/>
+<!--        <TextView-->
+<!--            android:id="@+id/numeracy"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="NUMERACY GAMES"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textSize="24sp"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:layout_gravity="center_horizontal"-->
+<!--            android:layout_marginBottom="16dp"/>-->
 
 
 
@@ -119,7 +120,7 @@
                     android:layout_width="150dp"
                     android:layout_height="120dp"
                     android:layout_gravity="center"
-                    android:src="@drawable/game2_image"
+                    android:src="@drawable/game1_image"
                     android:clickable="false"
                     android:focusable="false"/>
             </androidx.cardview.widget.CardView>
@@ -151,16 +152,16 @@
 
 
 
-        <TextView
-            android:id="@+id/evs"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="EVS GAMES"
-            android:textStyle="bold"
-            android:textSize="24sp"
-            android:textColor="@color/black"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="16dp"/>
+<!--        <TextView-->
+<!--            android:id="@+id/evs"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="EVS GAMES"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textSize="24sp"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:layout_gravity="center_horizontal"-->
+<!--            android:layout_marginBottom="16dp"/>-->
 
 
 
@@ -188,7 +189,7 @@
                     android:layout_width="150dp"
                     android:layout_height="120dp"
                     android:layout_gravity="center"
-                    android:src="@drawable/game3_image"
+                    android:src="@drawable/game2_image"
                     android:clickable="false"
                     android:focusable="false"/>
             </androidx.cardview.widget.CardView>
